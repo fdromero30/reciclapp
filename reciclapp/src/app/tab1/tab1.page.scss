@@ -2,3 +2,31 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.containerCoin {
+  // width: 40%;
+  padding: 7%;
+  align-items: center;
+  text-align: center;
+}
+
+.containerFondo {
+  position: absolute;
+  bottom: 0;
+  img {
+    opacity: 0.9;
+  }
+}
+
+.labelEcomonedas {
+  font-size: 2.5rem;
+  align-items: center;
+  text-align: -webkit-center;
+  padding-top: 27%;
+}
+
+.containerEcomoneda {
+  img {
+    width: 70%;
+  }
+}

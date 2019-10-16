@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  ecomonedas: number;
+  constructor() {
+    this.ecomonedas = 0;
+  }
 
 }
