@@ -1,6 +1,6 @@
 .contenedorInicio {
   background: rgb(36, 172, 87);
-  background: radial-gradient(circle, rgba(36, 172, 87, 1) 0%, rgba(2, 113, 18, 1) 80%);
+  background: radial-gradient(circle, rgba(36, 172, 87, 1) 0%, #094a48 80%);
   height: 100%;
   width: 100%;
 }
@@ -9,5 +9,7 @@
   position: absolute;
   width: 100%;
   padding: 7%;
-
+}
+.containerLogo {
+  padding: 20%;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ConstantsService } from 'src/shared/constants';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  public emailInput: string;
+  public passwordInput: string;
 
-  ngOnInit() {}
+  constructor(private router: Router) { }
+
+  ngOnInit() { }
+
+  /**
+   * realiza la petición de autenticación a firebase y redirecciona a tabs
+   */
+  authenticateUser() {
+    this.router.navigate([ConstantsService.URL_TABS]);
+  }
 
 }

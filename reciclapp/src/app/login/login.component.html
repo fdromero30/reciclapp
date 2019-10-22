@@ -1,3 +1,47 @@
-<p>
-  login works!
-</p>
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button [text]="''"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="tittleNav">
+      <strong>
+        EcoGhlam
+      </strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row style="text-align: center; padding: 5%;">
+      <ion-item class="containerTitulo">
+        <ion-title>
+          <strong>
+            Ingreso con Correo
+          </strong>
+        </ion-title>
+      </ion-item>
+    </ion-row>
+    <ion-row style="padding: 5%;">
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico:</ion-label>
+        <ion-input type="email" [(ngModel)]="emailInput"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña: </ion-label>
+        <ion-input type="password" [(ngModel)]="passwordInput"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row class="containerBotones">
+      <ion-col size="12">
+        <ion-button color="success" expand="full" (click)="authenticateUser()"
+          [disabled]="!emailInput || !passwordInput">
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <ion-label>
+            Ingresar
+          </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
