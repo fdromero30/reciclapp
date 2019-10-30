@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 import { Tab1PageModule } from '../tab1/tab1.module';
 import { Tab2PageModule } from '../tab2/tab2.module';
+import { AdminHomeModule } from '../adminHome/adminHome.module';
+import { AddWasteModule } from '../addWaste/addWaste.module';
 
 const routes: Routes = [
   {
@@ -20,6 +22,14 @@ const routes: Routes = [
       {
         path: 'tab2',
         loadChildren: () => Tab2PageModule
+      },
+      {
+        path: 'adminHome',
+        loadChildren: () => AdminHomeModule
+      },
+      {
+        path: 'addWaste',
+        loadChildren: () => AddWasteModule
       }
     ]
   }

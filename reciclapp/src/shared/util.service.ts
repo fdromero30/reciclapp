@@ -5,8 +5,18 @@ import { Injectable } from "@angular/core";
 })
 export class UtilService {
 
+    User: any;
 
     constructor() {
+        this.User = {
+            name: 'Fabian David',
+            lastName: 'Romero Jiménez',
+            email: 'fabian.romero.jimenez@gmail.com',
+            rol: 'administrador'
+        }
     }
 
+    getUser() {
+        return this.User;
+    }
 }

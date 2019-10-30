@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button [text]="''"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Eco Glham
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-searchbar></ion-searchbar>
+<ion-content>
+
+  <ion-card *ngFor="let item of listSchools">
+    <ion-card-header>
+      <ion-card-subtitle>Bogotá</ion-card-subtitle>
+      <ion-card-title>IED MANUEL DEL SOCORRO</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      <ion-button color="success" expand="block" (click)="goToSchoolDetail()">
+        <ion-icon name="trash"></ion-icon> Cargar Residuos
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

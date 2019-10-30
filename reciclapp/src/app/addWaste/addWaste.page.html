@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button class="show-back-button" [text]="''" (click)="comeBack()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Cargar Residuos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-row>
+            <ion-col size="12">
+              <ion-label position="floating">Botellas</ion-label>
+              <img src="../../assets/botella.jpg">
+            </ion-col>
+            <ion-col size="12">
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col size="12">
+              <ion-label position="floating">Latas:</ion-label>
+              <img src="../../assets/latas.jpg">
+            </ion-col>
+            <ion-col size="12">
+
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col size="12">
+              <ion-label position="floating">Envolturas:</ion-label>
+              <img src="../../assets/paps.jpg">
+            </ion-col>
+            <ion-col size="12">
+
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-row>
+            <ion-col size="12">
+              <ion-label position="floating">Orgánico:</ion-label>
+              <img src="../../assets/reciclaje-organico-naturaleza-medioambiente-11596881.jpg">
+            </ion-col>
+            <ion-col size="12">
+
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col size="12">
+              <ion-label position="floating">Tetrapack:</ion-label>
+              <img src="../../assets/tetrapack.png  ">
+            </ion-col>
+            <ion-col size="12">
+
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Tapas:</ion-label>
+          <ion-input type="number" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Papel y Cartón:</ion-label>
+          <ion-input type="number" placeholder=""></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="success" expand="full">
+          <ion-icon name="archive"></ion-icon>
+          <ion-label>
+            Cargar
+          </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

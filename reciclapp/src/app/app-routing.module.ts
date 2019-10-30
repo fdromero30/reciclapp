@@ -16,7 +16,9 @@ const routes: Routes = [
   {
     path: ConstantsService.URL_TABS, loadChildren: () => TabsPageModule
   },
-  { path: ConstantsService.URL_HOME, loadChildren: () => InicioModule }
+  {
+    path: ConstantsService.URL_HOME, loadChildren: () => InicioModule
+  }
 ];
 @NgModule({
   imports: [
